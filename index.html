@@ -15,7 +15,7 @@
 <body class="page__body container">
     <nav class="menu">
         <a href="" class="menu__logo">
-            <img src="/img/logo.svg" alt="Логотип языковой школы Let’s Speak" class="menu__logo-img" width="161" height="34">
+            <img src="/img/logo.svg" alt="Логотип языковой школы Let’s Speak" class="menu__logo-img" width="161" height="36">
         </a>
         <ul class="menu__list">
             <li class="menu__item">
@@ -41,21 +41,27 @@
             <input type="text" class="header__input" placeholder="Поиск...">
         </form>
         <div class="header__profile">
-            <a href="" class="header__profile-name">Опознанный Енот</a>
-            <button type="button">Открыть/Закрыть меню</button>
+            <a href="" class="header__profile-name users__name" data-text="О">Опознанный Енот</a>
+            <button type="button"><span class="visually-hidden">Открыть/Закрыть меню</span></button>
         </div>
-        <button class="header__btn">
-            Уведомления 
+        <button class="header__btn">            
+            <span class="visually-hidden">Уведомления</span>
+            <span class="header__notification-number">1</span>
         </button>
     </header>
     <main class="main">
         <h1 class="visually-hidden">Главная страница сайта языковой школы Let’s Speak</h1>
         <section class="main-slider">
+            <img src="img/content-slider-bg.jpg" width="820" height="300" alt="" class="main-slider__img">
             <h2 class="main-slider__title">Пройдите тест и узнайте насколько хорошо вы знакомы с жизнью в Лондоне</h2>
             <p class="main-slider__suptitle">«Бифитер», «Кокни», «Даблдекер»...</p>
-            <button class="main-slider__btn">Пройти тест ➞</button>
-            <button type="button" class="main-slider__arrow-btn main-slider__arrow-btn--back">Назад</button>
-            <button type="button" class="main-slider__arrow-btn main-slider__arrow-btn--forward">Вперед</button>
+            <a href="" class="main-slider__btn-link">Пройти тест ➞</a>
+            <button type="button" class="main-slider__arrow-btn main-slider__arrow-btn--back">
+                <span class="visually-hidden">Назад</span>
+            </button>
+            <button type="button" class="main-slider__arrow-btn main-slider__arrow-btn--forward">
+                <span class="visually-hidden">Вперед</span>
+            </button>
         </section>
         <section class="main-offers">
             <h2 class="visually-hidden">Интересные предложения</h2>
@@ -136,43 +142,43 @@
             <ul class="users__list">
                 <li class="users__list-item">
                     <a href="" class="users__link">
-                        <p class="users__name">Неопознанный Енот</p>
+                        <p class="users__name" data-text="Н">Неопознанный Енот</p>
                         <p class="users__study-language">English A1</p>
                     </a>
                 </li>
                 <li class="users__list-item">
                     <a href="" class="users__link">
-                        <p class="users__name">Неопознанный Енот 2</p>
+                        <p class="users__name" data-text="Н">Неопознанный Енот 2</p>
                         <p class="users__study-language">Español 2</p>
                     </a>
                 </li>
                 <li class="users__list-item">
                     <a href="" class="users__link">
-                        <p class="users__name">Неопознанный Енот 3</p>
+                        <p class="users__name" data-text="Н">Неопознанный Енот 3</p>
                         <p class="users__study-language">日本語</p>
                     </a>
                 </li>
                 <li class="users__list-item">
                     <a href="" class="users__link">
-                        <p class="users__name">Неопознанный Енот 4</p>
+                        <p class="users__name" data-text="Н">Неопознанный Енот 4</p>
                         <p class="users__study-language">English B2</p>
                     </a>
                 </li>
                 <li class="users__list-item">
                     <a href="" class="users__link">
-                        <p class="users__name">Неопознанный Енот 5</p>
+                        <p class="users__name" data-text="Н">Неопознанный Енот 5</p>
                         <p class="users__study-language">Le Français</p>
                     </a>
                 </li>
                 <li class="users__list-item">
                     <a href="" class="users__link">
-                        <p class="users__name">Неопознанный Енот 6</p>
+                        <p class="users__name" data-text="Н">Неопознанный Енот 6</p>
                         <p class="users__study-language">Español 1</p>
                     </a>
                 </li>
                 <li class="users__list-item">
                     <a href="" class="users__link">
-                        <p class="users__name">Неопознанный Енот 7</p>
+                        <p class="users__name" data-text="Н">Неопознанный Енот 7</p>
                         <p class="users__study-language">Italiano</p>
                     </a>
                 </li>
@@ -180,7 +186,7 @@
         </section>
     </main>
     <footer class="footer">
-        <p class="footer__date">© 2020 </p>
+        <p class="footer__date" tabindex="4">© 2021</p>
         <p class="footer__company-name"><b class="footer__bold">Let’s Speak,</b> языковая школа</p>
         <p class="footer__design-details">Сайт создан в <a href="https://htmlacademy.ru/" class="footer__link" target="_blank">HTML Academy</a></p>
     </footer>
